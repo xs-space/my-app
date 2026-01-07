@@ -10,6 +10,7 @@ uv.lock
 
 # Virtual environments
 .venv
+.env*
 
 # test
 tests/
