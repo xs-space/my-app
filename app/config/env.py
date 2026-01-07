@@ -1,11 +1,14 @@
+from pathlib import Path
+
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-ENV_FILE = r'E:\workspace\github\my_app\.env.dev'
+ENV_FILE = Path(__file__).absolute().parent.parent.parent / '.env.dev'
 
 
 class AppSettings(BaseSettings):
     name: str
     version: str
+    env: str
     debug: bool
 
     model_config = SettingsConfigDict(
@@ -49,5 +52,3 @@ class Settings(BaseSettings):
 
 
 settings = Settings()
-
-print(settings.model_dump())
