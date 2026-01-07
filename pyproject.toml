@@ -1,0 +1,31 @@
+[project]
+name = "test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "loguru>=0.7.3",
+    "requests>=2.32.5",
+]
+
+[[tool.uv.index]]
+name = "aliyun-mirror"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+default=true
+
+#[[tool.uv.index]]
+#name = "tuna-mirror"
+#url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+#
+#[[tool.uv.index]]
+#name = "ustc-mirror"
+#url = "https://pypi.mirrors.ustc.edu.cn/simple/"
+#
+#[[tool.uv.index]]
+#name = "doubanio-mirror"
+#url = "https://pypi.doubanio.com/simple/"
+#
+#[[tool.uv.index]]
+#name = "tencent-mirror"
+#url = "https://mirrors.cloud.tencent.com/pypi/simple/"
