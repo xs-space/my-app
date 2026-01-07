@@ -10,3 +10,9 @@ uv.lock
 
 # Virtual environments
 .venv
+
+# test
+tests/
+
+# logger
+logs/
