@@ -31,4 +31,4 @@ def health_check(response: Response):
 
 # 注册路由
 for controller in controller_list:
-    app.include_router(router=controller.get("router"), tags=controller.get("tags"))
+    app.include_router(router=controller.get("router"), tags=controller.get("tags"), prefix=controller.get("prefix"))

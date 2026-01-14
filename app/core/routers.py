@@ -1,3 +1,5 @@
+from app.v1.endpoints.big_models.views import llmController
+
 controller_list = [
     # {"router": loginController, "tags": ["登录模块"]},
     # {"router": captchaController, "tags": ["验证码模块"]},
@@ -16,4 +18,5 @@ controller_list = [
     # {"router": cacheController, "tags": ["系统监控-缓存监控"]},
     # {"router": commonController, "tags": ["通用模块"]},
     # {"router": genController, "tags": ["代码生成"]},
+    {"router": llmController, "tags": ["大模型接口"], "prefix": "/v1/llm"},
 ]

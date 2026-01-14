@@ -46,8 +46,8 @@ class Settings(BaseSettings):
 
     # big model
     deepseek_api_key: str
-    deepseek_model_api_url: str
-    deepseek_models_available: str
+    deepseek_api_url: str
+    deepseek_models: str
     deepseek_default_model: str
 
     @computed_field
